@@ -1,0 +1,75 @@
+package selenium;
+
+public class Trainer {
+	
+	int id;
+	String  Name; 
+	String Dep ;
+	String email;
+	
+	public Trainer( String TName, String Department, String TEmail, int TrainerID )
+	{
+		id= TrainerID;
+		Name = TName; 
+		Dep = Department;
+		email = TEmail;
+		
+			
+	}
+
+	public static void main(String[] args) {
+		
+		Trainer T1 = new Trainer("Mukesh","Testing","mukesh@gmail.com", 1);
+		Trainer T2 = new Trainer("Hitesh","Dev","Hitesh@gmail.com", 2);
+		Trainer T3 = new Trainer("Mukesh","DevOps","mukesh@gmail.com", 3);
+		
+		T1.selenium();
+		T2.Devlopment();
+		T3.Devops();
+
+		// Task 2
+		
+		Object [] Trainer1 = {"Mukesh","Testing","mukesh@gmail.com", 1};
+		Object [] Trainer2 = {"Hitesh","Dev","Hitesh@gmail.com", 2};
+		Object [] Trainer3 = {"Mukesh","DevOps","mukesh@gmail.com", 3};
+		
+		for(Object t1:Trainer1)
+		{
+		
+		System.out.println(t1);
+		
+		}
+		
+		for(Object t2:Trainer2) {
+			
+			System.out.println(t2);
+		}
+		
+		
+         for(Object t3:Trainer3) {
+			
+			System.out.println(t3);
+		}
+		
+		
+	}
+	
+	public void selenium() {
+		
+		System.out.println("I can teach Selenium");
+		
+	}
+	
+   public void Devops() {
+	   
+	   System.out.println("I can teach Devops");
+	}
+
+    public void Devlopment() {
+    	
+	
+    	System.out.println("I can teach Devlopment");
+}
+	
+
+}
